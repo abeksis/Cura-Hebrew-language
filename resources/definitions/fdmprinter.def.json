@@ -740,7 +740,7 @@
         },
         "resolution":
         {
-            "label": "Quality",
+            "label": "Quality (איכות)",
             "type": "category",
             "icon": "category_layer_height",
             "description": "All settings that influence the resolution of the print. These settings have a large impact on the quality (and print time)",
@@ -977,7 +977,7 @@
         },
         "shell":
         {
-            "label": "Shell (קליפה)",
+            "label": "Shell (מעטפת)",
             "icon": "category_shell",
             "description": "Shell",
             "type": "category",
@@ -1671,7 +1671,7 @@
         },
         "infill":
         {
-            "label": "Infill",
+            "label": "Infill (מילוי)",
             "icon": "category_infill",
             "description": "Infill",
             "type": "category",
@@ -1679,7 +1679,7 @@
             {
                 "infill_extruder_nr":
                 {
-                    "label": "Infill Extruder",
+                    "label": "Infill Extruder (מילוי אקסטרודר)",
                     "description": "The extruder train used for printing infill. This is used in multi-extrusion.",
                     "type": "optional_extruder",
                     "default_value": "-1",
@@ -1691,7 +1691,7 @@
                 },
                 "infill_sparse_density":
                 {
-                    "label": "Infill Density",
+                    "label": "Infill Density (צפיפות מילוי)",
                     "description": "Adjusts the density of infill of the print.",
                     "unit": "%",
                     "type": "float",
@@ -1704,7 +1704,7 @@
                     {
                         "infill_line_distance":
                         {
-                            "label": "Infill Line Distance",
+                            "label": "Infill Line Distance (מרחק קו מילוי)",
                             "description": "Distance between the printed infill lines. This setting is calculated by the infill density and the infill line width.",
                             "unit": "mm",
                             "type": "float",
@@ -1719,7 +1719,7 @@
                 },
                 "infill_pattern":
                 {
-                    "label": "Infill Pattern",
+                    "label": "Infill Pattern (דפוס מילוי)",
                     "description": "The pattern of the infill material of the print. The line and zig zag infill swap direction on alternate layers, reducing material cost. The grid, triangle, tri-hexagon, cubic, octet, quarter cubic, cross and concentric patterns are fully printed every layer. Gyroid, cubic, quarter cubic and octet infill change with every layer to provide a more equal distribution of strength over each direction.",
                     "type": "enum",
                     "options":
@@ -2127,7 +2127,7 @@
         },
         "material":
         {
-            "label": "Material",
+            "label": "Material (סוג החומר)",
             "icon": "category_material",
             "description": "Material",
             "type": "category",
@@ -2135,7 +2135,7 @@
             {
                 "default_material_print_temperature":
                 {
-                    "label": "Default Printing Temperature",
+                    "label": "Default Printing Temperature ( טמפ הדפסה ברירת מחדל )",
                     "description": "The default temperature used for printing. This should be the \"base\" temperature of a material. All other print temperatures should use offsets based on this value",
                     "unit": "°C",
                     "type": "float",
@@ -2165,8 +2165,8 @@
                 },
                 "material_print_temperature":
                 {
-                    "label": "Printing Temperature",
-                    "description": "The temperature used for printing.",
+                    "label": "Printing Temperature (טמפרטורת הדפסה)",
+                    "description": "הטמפרטורה המשמשת להדפסה.",
                     "unit": "°C",
                     "type": "float",
                     "default_value": 210,
@@ -2181,8 +2181,8 @@
                 },
                 "material_print_temperature_layer_0":
                 {
-                    "label": "Printing Temperature Initial Layer",
-                    "description": "The temperature used for printing the first layer. Set at 0 to disable special handling of the initial layer.",
+                    "label": "Printing Temperature Initial Layer (שכבה ראשונית של טמפרטורת הדפסה)",
+                    "description": "הטמפרטורה המשמשת להדפסת השכבה הראשונה. הגדר על 0 כדי להשבית טיפול מיוחד בשכבה הראשונית.",
                     "unit": "°C",
                     "type": "float",
                     "default_value": 215,
@@ -2197,7 +2197,7 @@
                 },
                 "material_initial_print_temperature":
                 {
-                    "label": "Initial Printing Temperature",
+                    "label": "Initial Printing Temperature (טמפרטורת הדפסה ראשונית)",
                     "description": "The minimal temperature while heating up to the Printing Temperature at which printing can already start.",
                     "unit": "°C",
                     "type": "float",
@@ -2213,7 +2213,7 @@
                 },
                 "material_final_print_temperature":
                 {
-                    "label": "Final Printing Temperature",
+                    "label": "Final Printing Temperature (טמפרטורת הדפסה סופית)",
                     "description": "The temperature to which to already start cooling down just before the end of printing.",
                     "unit": "°C",
                     "type": "float",
@@ -2732,16 +2732,16 @@
         },
         "speed":
         {
-            "label": "Speed",
+            "label": "Speed (מהירות)",
             "icon": "category_speed",
-            "description": "Speed",
+            "description": "מהירות הדפסה",
             "type": "category",
             "children":
             {
                 "speed_print":
                 {
-                    "label": "Print Speed",
-                    "description": "The speed at which printing happens.",
+                    "label": "Print Speed (מהירות הדפסה)",
+                    "description": "המהירות בה מתרחשת ההדפסה.",
                     "unit": "mm/s",
                     "type": "float",
                     "minimum_value": "0.1",
@@ -2753,8 +2753,8 @@
                     {
                         "speed_infill":
                         {
-                            "label": "Infill Speed",
-                            "description": "The speed at which infill is printed.",
+                            "label": "Infill Speed (מהירות מילוי)",
+                            "description": "המהירות בה מודפס המילוי.",
                             "unit": "mm/s",
                             "type": "float",
                             "minimum_value": "0.1",
@@ -2768,8 +2768,8 @@
                         },
                         "speed_wall":
                         {
-                            "label": "Wall Speed",
-                            "description": "The speed at which the walls are printed.",
+                            "label": "Wall Speed (מהירות קיר)",
+                            "description": "המהירות שבה מודפסים הקירות.",
                             "unit": "mm/s",
                             "type": "float",
                             "minimum_value": "0.1",
@@ -2782,8 +2782,8 @@
                             {
                                 "speed_wall_0":
                                 {
-                                    "label": "Outer Wall Speed",
-                                    "description": "The speed at which the outermost walls are printed. Printing the outer wall at a lower speed improves the final skin quality. However, having a large difference between the inner wall speed and the outer wall speed will affect quality in a negative way.",
+                                    "label": "Outer Wall Speed (מהירות הקיר החיצונית)",
+                                    "description": "המהירות שבה מודפסים הקירות החיצוניים ביותר. הדפסת הקיר החיצוני במהירות נמוכה יותר משפרת את איכות השטח הסופית. עם זאת, הבדל גדול בין מהירות הקיר הפנימי למהירות הקיר החיצוני ישפיע על האיכות באופן שלילי.",
                                     "unit": "mm/s",
                                     "type": "float",
                                     "minimum_value": "0.1",
@@ -2796,8 +2796,8 @@
                                 },
                                 "speed_wall_x":
                                 {
-                                    "label": "Inner Wall Speed",
-                                    "description": "The speed at which all inner walls are printed. Printing the inner wall faster than the outer wall will reduce printing time. It works well to set this in between the outer wall speed and the infill speed.",
+                                    "label": "Inner Wall Speed (מהירות קיר פנימית)",
+                                    "description": "המהירות בה מודפסים כל הקירות הפנימיים. הדפסת הקיר הפנימי מהר יותר מהקיר החיצוני תפחית את זמן ההדפסה. זה עובד טוב להגדיר את זה בין מהירות הקיר החיצונית למהירות המילוי.",
                                     "unit": "mm/s",
                                     "type": "float",
                                     "minimum_value": "0.1",
@@ -4090,16 +4090,16 @@
         },
         "support":
         {
-            "label": "Support",
+            "label": "Support (תמיכה)",
             "type": "category",
             "icon": "category_support",
-            "description": "Support",
+            "description": "תמיכה",
             "children":
             {
                 "support_enable":
                 {
-                    "label": "Generate Support",
-                    "description": "Generate structures to support parts of the model which have overhangs. Without these structures, such parts would collapse during printing.",
+                    "label": "Generate Support (צור תמיכה)",
+                    "description": "צור מבנים לתמיכה בחלקים של המודל שיש להם תלויות. ללא מבנים אלה, חלקים כאלה יתמוטטו במהלך ההדפסה.",
                     "type": "bool",
                     "default_value": false,
                     "settable_per_mesh": true,
@@ -5130,7 +5130,7 @@
         },
         "platform_adhesion":
         {
-            "label": "Build Plate Adhesion",
+            "label": "Build Plate Adhesion (הדבקה למשטח) ",
             "type": "category",
             "icon": "category_adhesion",
             "description": "Adhesion",
@@ -5138,7 +5138,7 @@
             {
                 "prime_blob_enable":
                 {
-                    "label": "Enable Prime Blob",
+                    "label": "Enable Prime Blob (הפעל את Prime Blob)",
                     "description": "Whether to prime the filament with a blob before printing. Turning this setting on will ensure that the extruder will have material ready at the nozzle before printing. Printing Brim or Skirt can act like priming too, in which case turning this setting off saves some time.",
                     "type": "bool",
                     "default_value": false,
@@ -5175,7 +5175,7 @@
                 },
                 "adhesion_type":
                 {
-                    "label": "Build Plate Adhesion Type",
+                    "label": "Build Plate Adhesion Type (נהל את סוג הידבקות)",
                     "description": "Different options that help to improve both priming your extrusion and adhesion to the build plate. Brim adds a single layer flat area around the base of your model to prevent warping. Raft adds a thick grid with a roof below the model. Skirt is a line printed around the model, but not connected to the model.",
                     "type": "enum",
                     "options":
@@ -6298,10 +6298,10 @@
         },
         "experimental":
         {
-            "label": "Experimental",
+            "label": "Experimental (ניסיוני)",
             "type": "category",
             "icon": "category_experimental",
-            "description": "Features that haven't completely been fleshed out yet.",
+            "description": "תכונות שעוד לא הושלמו לחלוטין.",
             "children":
             {
                 "slicing_tolerance":
