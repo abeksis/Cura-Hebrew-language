@@ -3636,7 +3636,7 @@
         },
         "travel":
         {
-            "label": "Travel",
+            "label": "Travel (מוביל)",
             "icon": "category_travel",
             "description": "travel",
             "type": "category",
@@ -3644,8 +3644,8 @@
             {
                 "retraction_enable":
                 {
-                    "label": "Enable Retraction",
-                    "description": "Retract the filament when the nozzle is moving over a non-printed area.",
+                    "label": "Enable Retraction (אפשר נסיגה)",
+                    "description": "משוך את פילמנט כאשר הזרבובית עוברת על שטח שאינו מודפס.",
                     "type": "bool",
                     "default_value": true,
                     "settable_per_mesh": false,
@@ -3653,8 +3653,8 @@
                 },
                 "retract_at_layer_change":
                 {
-                    "label": "Retract at Layer Change",
-                    "description": "Retract the filament when the nozzle is moving to the next layer.",
+                    "label": "Retract at Layer Change (נסוג בשינוי שכבה)",
+                    "description": "משוך את פילמנט כאשר הזרבובית עוברת לשכבה הבאה.",
                     "type": "bool",
                     "default_value": false,
                     "settable_per_mesh": false,
@@ -3662,7 +3662,7 @@
                 },
                 "retraction_amount":
                 {
-                    "label": "Retraction Distance",
+                    "label": "Retraction Distance (מרחק נסיגה)",
                     "description": "The length of material retracted during a retraction move.",
                     "unit": "mm",
                     "type": "float",
@@ -3675,8 +3675,8 @@
                 },
                 "retraction_speed":
                 {
-                    "label": "Retraction Speed",
-                    "description": "The speed at which the filament is retracted and primed during a retraction move.",
+                    "label": "Retraction Speed (מהירות נסיגה)",
+                    "description": "המהירות בה הנסיגה נשלפת ונסחבת במהלך מהלך נסיגה.",
                     "unit": "mm/s",
                     "type": "float",
                     "default_value": 25,
@@ -3941,7 +3941,7 @@
         },
         "cooling":
         {
-            "label": "Cooling",
+            "label": "Cooling (קירור)",
             "icon": "category_cool",
             "description": "Cooling",
             "type": "category",
@@ -3949,7 +3949,7 @@
             {
                 "cool_fan_enabled":
                 {
-                    "label": "Enable Print Cooling",
+                    "label": "Enable Print Cooling (אפשר קירור הדפסה)",
                     "description": "Enables the print cooling fans while printing. The fans improve print quality on layers with short layer times and bridging / overhangs.",
                     "type": "bool",
                     "default_value": true,
@@ -3958,8 +3958,8 @@
                 },
                 "cool_fan_speed":
                 {
-                    "label": "Fan Speed",
-                    "description": "The speed at which the print cooling fans spin.",
+                    "label": "Fan Speed (מהירות מאוורר)",
+                    "description": "את המהירות שבה מאווררי קירור ההדפסה מסתובבים.",
                     "unit": "%",
                     "type": "float",
                     "minimum_value": "0",
@@ -3973,7 +3973,7 @@
                     {
                         "cool_fan_speed_min":
                         {
-                            "label": "Regular Fan Speed",
+                            "label": "Regular Fan Speed (מהירות מאוורר רגילה) ",
                             "description": "The speed at which the fans spin before hitting the threshold. When a layer prints faster than the threshold, the fan speed gradually inclines towards the maximum fan speed.",
                             "unit": "%",
                             "type": "float",
@@ -3987,7 +3987,7 @@
                         },
                         "cool_fan_speed_max":
                         {
-                            "label": "Maximum Fan Speed",
+                            "label": "Maximum Fan Speed (מהירות מאוורר מקסימאלית)",
                             "description": "The speed at which the fans spin on the minimum layer time. The fan speed gradually increases between the regular fan speed and maximum fan speed when the threshold is hit.",
                             "unit": "%",
                             "type": "float",
@@ -4003,7 +4003,7 @@
                 },
                 "cool_min_layer_time_fan_speed_max":
                 {
-                    "label": "Regular/Maximum Fan Speed Threshold",
+                    "label": "Regular/Maximum Fan Speed Threshold (סף מהירות מאוורר רגיל / מקסימלי)",
                     "description": "The layer time which sets the threshold between regular fan speed and maximum fan speed. Layers that print slower than this time use regular fan speed. For faster layers the fan speed gradually increases towards the maximum fan speed.",
                     "unit": "s",
                     "type": "float",
@@ -4014,7 +4014,7 @@
                 },
                 "cool_fan_speed_0":
                 {
-                    "label": "Initial Fan Speed",
+                    "label": "Initial Fan Speed (מהירות המאוורר הראשונית)",
                     "description": "The speed at which the fans spin at the start of the print. In subsequent layers the fan speed is gradually increased up to the layer corresponding to Regular Fan Speed at Height.",
                     "unit": "%",
                     "type": "float",
@@ -4027,7 +4027,7 @@
                 },
                 "cool_fan_full_at_height":
                 {
-                    "label": "Regular Fan Speed at Height",
+                    "label": "Regular Fan Speed at Height (מהירות מאוורר קבועה בגובה)",
                     "description": "The height at which the fans spin on regular fan speed. At the layers below the fan speed gradually increases from Initial Fan Speed to Regular Fan Speed.",
                     "unit": "mm",
                     "type": "float",
@@ -4041,7 +4041,7 @@
                     {
                         "cool_fan_full_layer":
                         {
-                            "label": "Regular Fan Speed at Layer",
+                            "label": "Regular Fan Speed at Layer (מהירות מניפה רגילה בשכבה)",
                             "description": "The layer at which the fans spin on regular fan speed. If regular fan speed at height is set, this value is calculated and rounded to a whole number.",
                             "type": "int",
                             "default_value": 2,
@@ -4055,7 +4055,7 @@
                 },
                 "cool_min_layer_time":
                 {
-                    "label": "Minimum Layer Time",
+                    "label": "Minimum Layer Time (זמן שכבה מינימלי)",
                     "description": "The minimum time spent in a layer. This forces the printer to slow down, to at least spend the time set here in one layer. This allows the printed material to cool down properly before printing the next layer. Layers may still take shorter than the minimal layer time if Lift Head is disabled and if the Minimum Speed would otherwise be violated.",
                     "unit": "s",
                     "type": "float",
@@ -4067,7 +4067,7 @@
                 },
                 "cool_min_speed":
                 {
-                    "label": "Minimum Speed",
+                    "label": "Minimum Speed (מהירות מינימלית)",
                     "description": "The minimum print speed, despite slowing down due to the minimum layer time. When the printer would slow down too much, the pressure in the nozzle would be too low and result in bad print quality.",
                     "unit": "mm/s",
                     "type": "float",
@@ -4079,7 +4079,7 @@
                 },
                 "cool_lift_head":
                 {
-                    "label": "Lift Head",
+                    "label": "Lift Head (הרם ראש)",
                     "description": "When the minimum speed is hit because of minimum layer time, lift the head away from the print and wait the extra time until the minimum layer time is reached.",
                     "type": "bool",
                     "default_value": false,
