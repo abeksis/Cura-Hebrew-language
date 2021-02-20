@@ -5787,7 +5787,7 @@
             "label": "Dual Extrusion",
             "type": "category",
             "icon": "category_dual",
-            "description": "Settings used for printing with multiple extruders.",
+            "description": "הגדרות המשמשות להדפסה עם מספר אקסטרודר",
             "children":
             {
                 "prime_tower_enable":
@@ -5999,10 +5999,10 @@
         },
         "meshfix":
         {
-            "label": "Mesh Fixes",
+            "label": "Mesh Fixes (תיקוני רשת)",
             "type": "category",
             "icon": "category_fixes",
-            "description": "Make the meshes more suited for 3D printing.",
+            "description": "הפוך את הרשתות למתאימות יותר להדפסת תלת מימד.",
             "children":
             {
                 "meshfix_union_all":
@@ -6125,10 +6125,10 @@
         },
         "blackmagic":
         {
-            "label": "Special Modes",
+            "label": "Special Modes (מצבים מיוחדים) ",
             "type": "category",
             "icon": "category_blackmagic",
-            "description": "Non-traditional ways to print your models.",
+            "description": "דרכים לא מסורתיות להדפיס את הדגמים שלך.",
             "children":
             {
                 "print_sequence":
