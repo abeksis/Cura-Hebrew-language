@@ -1747,7 +1747,7 @@
                 "zig_zaggify_infill":
                 {
                     "label": "Connect Infill Lines (חבר קווי מילוי)",
-                    "description": "Connect the ends where the infill pattern meets the inner wall using a line which follows the shape of the inner wall. Enabling this setting can make the infill adhere to the walls better and reduce the effects of infill on the quality of vertical surfaces. Disabling this setting reduces the amount of material used.",
+                    "description": "חבר את הקצוות שבהם דפוס המילוי פוגש את הקיר הפנימי באמצעות קו העוקב אחר צורת הקיר הפנימי. הפעלת הגדרה זו יכולה לגרום למילוי להיצמד לקירות טוב יותר ולהפחית את השפעות המילוי על איכות המשטחים האנכיים. השבתת הגדרה זו מפחיתה את כמות החומר בשימוש.",
                     "type": "bool",
                     "default_value": false,
                     "value": "infill_pattern == 'cross' or infill_pattern == 'cross_3d'",
@@ -1757,8 +1757,8 @@
                 },
                 "connect_infill_polygons":
                 {
-                    "label": "Connect Infill Polygons",
-                    "description": "Connect infill paths where they run next to each other. For infill patterns which consist of several closed polygons, enabling this setting greatly reduces the travel time.",
+                    "label": "Connect Infill Polygons (חבר פוליגונים למילוי)",
+                    "description": "חבר נתיבי מילוי שבהם הם רצים זה ליד זה. עבור תבניות מילוי המורכבות ממספר מצולעים סגורים, המאפשר הגדרה זו מקטין מאוד את זמן הנסיעה.",
                     "type": "bool",
                     "default_value": true,
                     "value": "(infill_pattern == 'cross' or infill_pattern == 'cross_3d' or infill_multiplier % 2 == 0) and infill_wall_line_count > 0",
