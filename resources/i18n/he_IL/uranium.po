@@ -1,0 +1,950 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: r.dulek@ultimaker.com\n"
+"POT-Creation-Date: 2020-10-19 13:16+0200\n"
+"PO-Revision-Date: 2021-02-20 15:43+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
+"2 : 3);\n"
+"X-Generator: Poedit 2.4.1\n"
+"Last-Translator: \n"
+"Language: he\n"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/FileHandlers/OBJReader/__init__.py:15
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/FileHandlers/OBJWriter/__init__.py:15
+#, fuzzy
+msgctxt "@item:inlistbox"
+msgid "Wavefront OBJ File"
+msgstr "קובץ OBJ בחזית הגל"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/FileHandlers/OBJWriter/OBJWriter.py:25
+#, fuzzy
+msgctxt "@error:not supported"
+msgid "OBJWriter does not support non-text mode."
+msgstr "OBJWriter אינו תומך במצב שאינו טקסט."
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/FileHandlers/OBJWriter/OBJWriter.py:32
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/FileHandlers/STLWriter/STLWriter.py:29
+#, fuzzy
+msgctxt "@error:no mesh"
+msgid "There is no mesh to write."
+msgstr "אין רשת לכתוב."
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/FileHandlers/STLReader/__init__.py:14
+#, fuzzy
+msgctxt "@item:inlistbox"
+msgid "STL File"
+msgstr "קובץ STL"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/FileHandlers/STLWriter/STLWriter.py:38
+#, fuzzy
+msgctxt "@error:not supported"
+msgid "Unsupported output mode writing STL to stream."
+msgstr "מצב פלט שאינו נתמך כותב STL להזרמה."
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/FileHandlers/STLWriter/__init__.py:17
+#, fuzzy
+msgctxt "@item:inlistbox"
+msgid "STL File (ASCII)"
+msgstr "קובץ STL (ASCII)"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/FileHandlers/STLWriter/__init__.py:23
+#, fuzzy
+msgctxt "@item:inlistbox"
+msgid "STL File (Binary)"
+msgstr "קובץ STL (בינארי)"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:29
+#, fuzzy
+msgctxt "@item:inmenu"
+msgid "Local File"
+msgstr "מחיקת קובץ מקומי לפני יצירת הקובץ הבא"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:30
+#, fuzzy
+msgctxt "@action:button Preceded by 'Ready to'."
+msgid "Save to File"
+msgstr "שמור בקובץ"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:31
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Save to File"
+msgstr "שמור בקובץ"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:54
+#, fuzzy
+msgctxt "@title:window"
+msgid "Save to File"
+msgstr "שמור בקובץ"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:87
+#, fuzzy
+msgctxt "@info:warning"
+msgid "There are no file types available to write with!"
+msgstr "אין סוגי קבצים זמינים לכתיבה!"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:133
+#, fuzzy
+msgctxt "@title:window"
+msgid "File Already Exists"
+msgstr "הקובץ כבר קיים"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:133
+#, fuzzy, python-brace-format
+msgctxt "@label Don't translate the XML tag <filename>!"
+msgid ""
+"The file <filename>{0}</filename> already exists. Are you sure you want to "
+"overwrite it?"
+msgstr ""
+"הקובץ <filename>{0}</filename> כבר קיים. האם אתה בטוח שברצונך להחליף אותו?"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:163
+#, fuzzy, python-brace-format
+msgctxt "@info:progress Don't translate the XML tags <filename>!"
+msgid "Saving to <filename>{0}</filename>"
+msgstr "שמירה ב- <filename>{0}</filename>"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:164
+msgctxt "@info:title"
+msgid "Saving"
+msgstr "שומר"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:172
+#, fuzzy, python-brace-format
+msgctxt "@info:status Don't translate the XML tags <filename>!"
+msgid "Permission denied when trying to save <filename>{0}</filename>"
+msgstr "ההרשאה נדחתה בעת ניסיון לשמור <filename>{0}</filename>"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:175
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:191
+#, fuzzy, python-brace-format
+msgctxt "@info:status Don't translate the XML tags <filename> or <message>!"
+msgid "Could not save to <filename>{0}</filename>: <message>{1}</message>"
+msgstr ""
+"לא היתה אפשרות לשמור <filename>{0}</filename> ב: <message>{1}</message>"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:185
+#, fuzzy, python-brace-format
+msgctxt "@info:status Don't translate the XML tags <filename>!"
+msgid "Saved to <filename>{0}</filename>"
+msgstr "נשמר ב- <filename>{0}</filename>"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:185
+msgctxt "@info:title"
+msgid "File Saved"
+msgstr "הקובץ נשמר"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:186
+#, fuzzy
+msgctxt "@action:button"
+msgid "Open Folder"
+msgstr "פתח תיקיה"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:186
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Open the folder containing the file"
+msgstr "פתיחת התיקיה המכילה את הקובץ"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:191
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateCheckerJob.py:65
+msgctxt "@info:title"
+msgid "Warning"
+msgstr "אזהרה"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:198
+#, fuzzy, python-brace-format
+msgctxt "@info:status"
+msgid ""
+"Something went wrong saving to <filename>{0}</filename>: <message>{1}</"
+"message>"
+msgstr "משהו השתבש בחיסכון <filename>{0}</filename> ל: <message>{1}</message>"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/LocalFileOutputDevice/LocalFileOutputDevice.py:198
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateCheckerJob.py:95
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/Bindings/OutputDeviceManagerProxy.py:156
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/Bindings/OutputDeviceManagerProxy.py:159
+msgctxt "@info:title"
+msgid "Error"
+msgstr "שגיאה"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/MirrorTool/__init__.py:12
+msgctxt "@label"
+msgid "Mirror"
+msgstr "ראי"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/MirrorTool/__init__.py:13
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Mirror Model"
+msgstr "מודל שיקוף"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/RotateTool/RotateTool.py:352
+#, fuzzy
+msgctxt "@label"
+msgid "Laying object flat on buildplate..."
+msgstr "הנחת אובייקט שטוח על לוחית בנייה..."
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/RotateTool/RotateTool.py:352
+#, fuzzy
+msgctxt "@title"
+msgid "Object Rotation"
+msgstr "סיבוב אובייקט"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/RotateTool/__init__.py:12
+msgctxt "@label"
+msgid "Rotate"
+msgstr "סובבי"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/RotateTool/__init__.py:13
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Rotate Model"
+msgstr "סובב מודל"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/ScaleTool/__init__.py:12
+msgctxt "@label"
+msgid "Scale"
+msgstr "קנה מידה"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/ScaleTool/__init__.py:13
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Scale Model"
+msgstr "מודל קנה מידה"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/TranslateTool/__init__.py:12
+msgctxt "@action:button"
+msgid "Move"
+msgstr "העבר"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/TranslateTool/__init__.py:13
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Move Model"
+msgstr "הזז מודל"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateChecker.py:26
+#, fuzzy
+msgctxt "@item:inmenu"
+msgid "Update Checker"
+msgstr "בודק העדכונים"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateChecker.py:27
+#, fuzzy
+msgctxt "@item:inmenu"
+msgid "Check for Updates"
+msgstr "בדוק אם קיימים עדכונים"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateCheckerJob.py:52
+#, fuzzy
+msgctxt "@info"
+msgid "Could not access update information."
+msgstr "לא היתה אפשרות לגשת לפרטי העדכון."
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateCheckerJob.py:53
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateCheckerJob.py:70
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateCheckerJob.py:99
+#: /home/trin/Gedeeld/Projects/Uranium/UM/VersionUpgradeManager.py:173
+#, fuzzy
+msgctxt "@info:title"
+msgid "Version Upgrade"
+msgstr "שדרוג גירסה"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateCheckerJob.py:65
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateCheckerJob.py:70
+#, fuzzy
+msgctxt "@info"
+msgid "The version you are using does not support checking for updates."
+msgstr "הגירסה בה אתה משתמש אינה תומכת בבדיקת עדכונים."
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateCheckerJob.py:95
+#, fuzzy
+msgctxt "@info"
+msgid "An error occurred while checking for updates."
+msgstr "אירעה שגיאה בעת בדיקה אם קיימים עדכונים."
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateCheckerJob.py:99
+#, fuzzy
+msgctxt "@info"
+msgid "No new version was found."
+msgstr "לא נמצאה גירסה חדשה."
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateCheckerJob.py:104
+#, fuzzy, python-brace-format
+msgctxt "@info:status"
+msgid "{application_name} {version_number} is available!"
+msgstr "{application_name} {version_number} זמין!"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateCheckerJob.py:106
+#, fuzzy, python-brace-format
+msgctxt "@info:status"
+msgid ""
+"{application_name} {version_number} provides a better and more reliable "
+"printing experience."
+msgstr ""
+"{application_name} {version_number} מספק חוויית הדפסה טובה ואמינה יותר."
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateCheckerJob.py:109
+msgctxt "@action:button"
+msgid "Download"
+msgstr "הורדה"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/UpdateChecker/UpdateCheckerJob.py:111
+msgctxt "@action:button"
+msgid "Learn more"
+msgstr "הצג עוד"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Views/SimpleView/__init__.py:12
+msgctxt "@item:inmenu"
+msgid "Simple"
+msgstr "פשוט"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/ConfigurationErrorMessage.py:33
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/RotateTool/RotateTool.qml:21
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/ScaleTool/ScaleTool.qml:67
+msgctxt "@action:button"
+msgid "Reset"
+msgstr "איפוס"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/ConfigurationErrorMessage.py:45
+#, fuzzy, python-brace-format
+msgctxt "@info:status"
+msgid ""
+"Your configuration seems to be corrupt. Something seems to be wrong with the "
+"following profiles:\n"
+"- {profiles}\n"
+" Would you like to reset to factory defaults? Reset will remove all your "
+"current printers and profiles."
+msgstr ""
+"נראה שהתצורה שלך פגומה. נראה שמשהו לא בסדר בפרופילים הבאים:\n"
+"- {profiles}\n"
+" האם ברצונך לאפס לברירות המחדל של היצרן? איפוס יסיר את כל המדפסות והפרופילים "
+"הנוכחיים שלך."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/ConfigurationErrorMessage.py:50
+#, fuzzy
+msgctxt "@title:window"
+msgid "Reset to factory"
+msgstr "אפס ליצרן"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/ConfigurationErrorMessage.py:52
+#, fuzzy
+msgctxt "@label"
+msgid ""
+"Reset will remove all your current printers and profiles! Are you sure you "
+"want to reset?"
+msgstr ""
+"איפוס יסיר את כל המדפסות והפרופילים הנוכחיים שלך! האם אתה בטוח שברצונך לאפס?"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/FileHandler/FileHandler.py:58
+#: /home/trin/Gedeeld/Projects/Uranium/UM/PluginRegistry.py:844
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Settings/Models/InstanceContainersModel.py:193
+#, fuzzy, python-brace-format
+msgctxt "@item:inlistbox"
+msgid "All Supported Types ({0})"
+msgstr "כל הסוגים הנתמכים ({0})"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/FileHandler/FileHandler.py:59
+#: /home/trin/Gedeeld/Projects/Uranium/UM/PluginRegistry.py:845
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Settings/Models/InstanceContainersModel.py:196
+#, fuzzy
+msgctxt "@item:inlistbox"
+msgid "All Files (*)"
+msgstr "מדריך דומיינים: גיבוי כל קבצי המשתמש עבור כל שמות המתחם"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/FileHandler/ReadFileJob.py:36
+#, fuzzy, python-brace-format
+msgctxt "@info:status Don't translate the XML tag <filename>!"
+msgid "Cannot open files of the type of <filename>{0}</filename>"
+msgstr "אין אפשרות לפתוח קבצים מסוג <filename>{0}</filename>"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/FileHandler/ReadFileJob.py:36
+msgctxt "@info:title"
+msgid "Invalid File"
+msgstr "סוג קובץ לא חוקי"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/FileHandler/ReadFileJob.py:49
+#: /home/trin/Gedeeld/Projects/Uranium/UM/FileHandler/ReadFileJob.py:74
+#, fuzzy, python-brace-format
+msgctxt "@info:status Don't translate the XML tag <filename>!"
+msgid ""
+"Failed to load <filename>{0}</filename>. The file could be corrupt or "
+"inaccessible."
+msgstr "טעינת <filename>{0}</filename> . ייתכן שהקובץ פגום או שאינו נגיש."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/FileHandler/ReadFileJob.py:51
+#: /home/trin/Gedeeld/Projects/Uranium/UM/FileHandler/ReadFileJob.py:74
+#, fuzzy
+msgctxt "@info:title"
+msgid "Unable to Open File"
+msgstr "אין אפשרות לפתוח קובץ"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/FileHandler/ReadFileJob.py:59
+msgctxt "@info:title"
+msgid "Loading"
+msgstr "טוען"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Mesh/ReadMeshJob.py:70
+#, python-format, python-brace-format
+msgctxt "@info:status"
+msgid "Auto scaled object to {0}% of original size"
+msgstr "‫Auto scaled object to {0}% of original size"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Mesh/ReadMeshJob.py:70
+#, fuzzy
+msgctxt "@info:title"
+msgid "Scaling Object"
+msgstr "שינוי קנה מידה של אובייקט"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/PackageManager.py:272
+#, fuzzy, python-brace-format
+msgctxt "@error:uninstall"
+msgid ""
+"There were some errors uninstalling the following packages:\n"
+"{packages}"
+msgstr ""
+"אירעו מספר שגיאות בהסרת ההתקנה של החבילות הבאות:\n"
+"{packages}"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/PackageManager.py:274
+#, fuzzy
+msgctxt "@info:title"
+msgid "Uninstalling errors"
+msgstr "הסרת התקנה של שגיאות"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/PackageManager.py:550
+#, fuzzy, python-brace-format
+msgctxt "@error:update"
+msgid ""
+"There was an error uninstalling the package {package} before installing new "
+"version:\n"
+"{error}.\n"
+"Please try to upgrade again later."
+msgstr ""
+"אירעה שגיאה בהסרת ההתקנה של החבילה {package} לפני התקנת גירסה חדשה:\n"
+"{error}.\n"
+"נא נסה לשדרג שוב מאוחר יותר."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/PackageManager.py:553
+#, fuzzy
+msgctxt "@info:title"
+msgid "Updating error"
+msgstr "מעדכן שגיאה"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/PluginRegistry.py:220
+#, fuzzy
+msgctxt "@error:untrusted"
+msgid ""
+"Plugin {} was not loaded because it tried to load files outside of the "
+"trusted context"
+msgstr "התוסף {} לא נטען מאחר שהוא ניסה לטעון קבצים מחוץ להקשר המהימן"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/PluginRegistry.py:363
+#, fuzzy
+msgctxt "@info:status"
+msgid ""
+"The plugin has been installed.\n"
+"Please re-start the application to activate the plugin."
+msgstr ""
+"התוסף הותקן.\n"
+"נא הפעל מחדש את היישום כדי להפעיל את התוסף."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/PluginRegistry.py:416
+#, fuzzy
+msgctxt "@error:untrusted"
+msgid "Plugin {} was not loaded because it could not be verified."
+msgstr "התוסף {} לא נטען מאחר שלא היתה אפשרות לאמת אותו."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/PluginRegistry.py:516
+#, fuzzy, python-brace-format
+msgctxt "@info:status"
+msgid ""
+"The plugin has been removed.\n"
+"Please restart {0} to finish uninstall."
+msgstr ""
+"התוסף הוסר.\n"
+"נא הפעל מחדש {0} כדי לסיים את הסרת ההתקנה."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/Duration.py:122
+#, fuzzy, python-brace-format
+msgctxt ""
+"@label Short days-hours-minutes format. {0} is days, {1} is hours, {2} is "
+"minutes"
+msgid "{0:0>2}d {1:0>2}h {2:0>2}min"
+msgstr "{0:0>2}d {1:0>2}h {2:0>2}דקה"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/Duration.py:124
+#, fuzzy, python-brace-format
+msgctxt "@label Short hours-minutes format. {0} is hours, {1} is minutes"
+msgid "{0:0>2}h {1:0>2}min"
+msgstr "{0:0>2}h {1:0>2}דקה"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/Duration.py:127
+#, fuzzy, python-brace-format
+msgctxt "@label Long duration format. {0} is days"
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] "יום {0}"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/Duration.py:127
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/Duration.py:129
+#, fuzzy, python-brace-format
+msgctxt "@label Long duration format. {0} is hours"
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] "שעה {0}"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/Duration.py:127
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/Duration.py:129
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/Duration.py:131
+#, fuzzy, python-brace-format
+msgctxt "@label Long duration format. {0} is minutes"
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] "דקה {0}"
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/QtApplication.py:190
+#, fuzzy
+msgctxt "@info:progress"
+msgid "Initializing package manager..."
+msgstr "מאתחל מנהל חבילות..."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/QtApplication.py:198
+#, fuzzy
+msgctxt "@info:status"
+msgid "Your configuration seems to be corrupt."
+msgstr "נראה שהתצורה שלך פגומה."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/QtApplication.py:200
+#, fuzzy
+msgctxt "@info:title"
+msgid "Configuration errors"
+msgstr "שגיאות תצורה"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/QtApplication.py:203
+#, fuzzy
+msgctxt "@info:progress"
+msgid "Loading plugins..."
+msgstr "טוען תוספים..."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/QtApplication.py:210
+#, fuzzy
+msgctxt "@info:progress"
+msgid "Updating configuration..."
+msgstr "מעדכן תצורה..."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/QtApplication.py:216
+#, fuzzy
+msgctxt "@info:progress"
+msgid "Loading preferences..."
+msgstr "טוען העדפות..."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/QtApplication.py:301
+#, fuzzy
+msgctxt "@info:progress"
+msgid "Loading UI..."
+msgstr "טוען ממשק משתמש..."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Scene/Scene.py:181
+#, fuzzy, python-brace-format
+msgctxt "@info"
+msgid "Would you like to reload {filename}?"
+msgstr "האם ברצונך לטעון מחדש {filename}?"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Scene/Scene.py:182
+#, fuzzy
+msgctxt "@info:title"
+msgid "File has been modified"
+msgstr "הקובץ השתנה"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Scene/Scene.py:183
+msgctxt "@action:button"
+msgid "Reload"
+msgstr "טעינה מחדש"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Scene/Scene.py:183
+#, fuzzy
+msgctxt "@action:description"
+msgid "This will trigger the modified files to reload from disk."
+msgstr "פעולה זו תפעיל את הקבצים ששונו כדי לטעון מחדש מהדיסק."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/VersionUpgradeManager.py:173
+#, fuzzy, python-brace-format
+msgctxt "@info:version-upgrade"
+msgid "A configuration from an older version of {0} was imported."
+msgstr "תצורה מגירסה ישנה יותר של {0} יובאה."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/View/GL/OpenGL.py:59
+#: /home/trin/Gedeeld/Projects/Uranium/UM/View/GL/OpenGL.py:64
+#, fuzzy
+msgctxt "@message"
+msgid "Failed to Initialize OpenGL"
+msgstr "אתחול OpenGL נכשל"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/View/GL/OpenGL.py:74
+#, fuzzy
+msgctxt "Critical OpenGL Extensions Missing"
+msgid ""
+"Critical OpenGL extensions are missing. This program requires support for "
+"Framebuffer Objects. Please check your video card drivers."
+msgstr ""
+"הרחבות OpenGL קריטיות חסרות. תוכנית זו דורשת תמיכה עבור אובייקטים "
+"Framebuffer. נא בדוק את מנהלי הנהגים של כרטיס המסך שלך."
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/RotateTool/RotateTool.qml:39
+#, fuzzy
+msgctxt "@action:button"
+msgid "Lay flat"
+msgstr "שכב שטוח"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/RotateTool/RotateTool.qml:60
+#, fuzzy
+msgctxt "@action:button"
+msgid "Select face to align to the build plate"
+msgstr "בחר פנים ליישור ללוח הבנייה"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/RotateTool/RotateTool.qml:81
+#, fuzzy
+msgctxt "@action:checkbox"
+msgid "Snap Rotation"
+msgstr "הצמד סיבוב"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/ScaleTool/ScaleTool.qml:93
+#, fuzzy
+msgctxt "@option:check"
+msgid "Snap Scaling"
+msgstr "הצמד שינוי קנה מידה"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/ScaleTool/ScaleTool.qml:121
+#, fuzzy
+msgctxt "@option:check"
+msgid "Uniform Scaling"
+msgstr "שינוי קנה מידה אחיד"
+
+#: /home/trin/Gedeeld/Projects/Uranium/plugins/Tools/TranslateTool/TranslateTool.qml:196
+#, fuzzy
+msgctxt "@option:check"
+msgid "Lock Model"
+msgstr "נעל דגם"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Preferences/ConfirmRemoveDialog.qml:16
+#, fuzzy
+msgctxt "@title:window"
+msgid "Confirm Remove"
+msgstr "אישור הסרה"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Preferences/ConfirmRemoveDialog.qml:17
+#, fuzzy
+msgctxt "@label (%1 is object name)"
+msgid "Are you sure you wish to remove %1? This cannot be undone!"
+msgstr "האם אתה בטוח שברצונך להסיר את %1? לא ניתן לבטל זאת!"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Preferences/MachinesPage.qml:12
+#, fuzzy
+msgctxt "@title:tab"
+msgid "Printers"
+msgstr "מדפסות"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Preferences/MachinesPage.qml:40
+msgctxt "@label"
+msgid "Type"
+msgstr "סוג"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Preferences/PreferencesDialog.qml:18
+msgctxt "@title:window"
+msgid "Preferences"
+msgstr "העדפות"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Preferences/PreferencesDialog.qml:107
+msgctxt "@action:button"
+msgid "Defaults"
+msgstr "הגדרות (ברירת המחדל"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Preferences/PreferencesDialog.qml:115
+msgctxt "@action:button"
+msgid "Close"
+msgstr "סגור"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Preferences/PreferencesDialog.qml:148
+msgctxt "@title:tab"
+msgid "General"
+msgstr "כללי"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Preferences/PreferencesDialog.qml:149
+msgctxt "@title:tab"
+msgid "Settings"
+msgstr "הגדרות"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Preferences/RenameDialog.qml:19
+msgctxt "@title:window"
+msgid "Rename"
+msgstr "שינוי שם"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Preferences/RenameDialog.qml:20
+#, fuzzy
+msgctxt "@info"
+msgid "Please provide a new name."
+msgstr "נא ספק שם חדש."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Preferences/RenameDialog.qml:70
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Wizard.qml:241
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "ביטול"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Preferences/RenameDialog.qml:75
+msgctxt "@action:button"
+msgid "OK"
+msgstr "אישור"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Preferences/SettingVisibilityItem.qml:32
+#, fuzzy
+msgctxt "@item:tooltip"
+msgid ""
+"This setting has been hidden by the active machine and will not be visible."
+msgstr "הגדרה זו הוסתרה על-ידי המחשב הפעיל ולא תהיה גלויה."
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Preferences/SettingVisibilityItem.qml:49
+#, fuzzy
+msgctxt "@item:tooltip %1 is list of setting names"
+msgid ""
+"This setting has been hidden by the value of %1. Change the value of that "
+"setting to make this setting visible."
+msgid_plural ""
+"This setting has been hidden by the values of %1. Change the values of those "
+"settings to make this setting visible."
+msgstr[0] ""
+"הגדרה זו הוסתרה על-ידי הערך של %1. שנה את הערך של הגדרה זו כדי להפוך הגדרה "
+"זו לגלויה."
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Wizard.qml:215
+msgctxt "@action:button"
+msgid "Back"
+msgstr "חזור"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Wizard.qml:231
+msgctxt "@action:button"
+msgid "Finish"
+msgstr "סיום"
+
+#: /home/trin/Gedeeld/Projects/Uranium/UM/Qt/qml/UM/Wizard.qml:231
+msgctxt "@action:button"
+msgid "Next"
+msgstr "הבא"
+
+#: ConsoleLogger/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid "Outputs log information to the console."
+msgstr "הפקת פלט של מידע יומן רישום למסוף."
+
+#: ConsoleLogger/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "Console Logger"
+msgstr "לוגר מסוף"
+
+#: FileHandlers/OBJReader/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid "Makes it possible to read Wavefront OBJ files."
+msgstr "מאפשר לקרוא קבצי OBJ של Wavefront."
+
+#: FileHandlers/OBJReader/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "Wavefront OBJ Reader"
+msgstr "קורא OBJ חזית גל"
+
+#: FileHandlers/OBJWriter/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid "Makes it possible to write Wavefront OBJ files."
+msgstr "מאפשר לכתוב קבצי OBJ של Wavefront."
+
+#: FileHandlers/OBJWriter/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "Wavefront OBJ Writer"
+msgstr "כותב OBJ חזית גל"
+
+#: FileHandlers/STLReader/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid "Provides support for reading STL files."
+msgstr "מתן תמיכה בקריאת קבצי STL."
+
+#: FileHandlers/STLReader/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "STL Reader"
+msgstr "קורא STL"
+
+#: FileHandlers/STLWriter/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid "Provides support for writing STL files."
+msgstr "מתן תמיכה בכתיבת קבצי STL."
+
+#: FileHandlers/STLWriter/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "STL Writer"
+msgstr "כותב STL"
+
+#: FileLogger/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid "Outputs log information to a file in your settings folder."
+msgstr "הפקת פלט של מידע יומן רישום לקובץ בתיקיית ההגדרות שלך."
+
+#: FileLogger/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "File Logger"
+msgstr "רישום קבצים"
+
+#: LocalContainerProvider/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid ""
+"Provides built-in setting containers that come with the installation of the "
+"application."
+msgstr "מתן גורמים מכילים מוכללים של הגדרה המגיעים עם התקנת היישום."
+
+#: LocalContainerProvider/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "Local Container Provider"
+msgstr "ספק גורם מכיל מקומי"
+
+#: LocalFileOutputDevice/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid "Enables saving to local files."
+msgstr "מתן אפשרות לשמירה בקבצים מקומיים."
+
+#: LocalFileOutputDevice/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "Local File Output Device"
+msgstr "התקן פלט של קובץ מקומי"
+
+#: Tools/CameraTool/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid "Provides the tool to manipulate the camera."
+msgstr "מתן הכלי לטיפול במצלמה."
+
+#: Tools/CameraTool/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "Camera Tool"
+msgstr "כלי מצלמה"
+
+#: Tools/MirrorTool/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid "Provides the Mirror tool."
+msgstr "מתן הכלי שיקוף."
+
+#: Tools/MirrorTool/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "Mirror Tool"
+msgstr "הכלי שיקוף"
+
+#: Tools/RotateTool/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid "Provides the Rotate tool."
+msgstr "מתן הכלי סיבוב."
+
+#: Tools/RotateTool/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "Rotate Tool"
+msgstr "הכלי סיבוב"
+
+#: Tools/ScaleTool/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid "Provides the Scale tool."
+msgstr "מתן הכלי שינוי גודל."
+
+#: Tools/ScaleTool/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "Scale Tool"
+msgstr "הכלי שינוי קנה מידה"
+
+#: Tools/SelectionTool/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid "Provides the Selection tool."
+msgstr "מתן הכלי בחירה."
+
+#: Tools/SelectionTool/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "Selection Tool"
+msgstr "הכלי בחירה"
+
+#: Tools/TranslateTool/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid "Provides the Move tool."
+msgstr "מתן הכלי הזזה."
+
+#: Tools/TranslateTool/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "Move Tool"
+msgstr "הכלי הזזה"
+
+#: UpdateChecker/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid "Checks for updates of the software."
+msgstr "בודק אם קיימים עדכונים של התוכנה."
+
+#: UpdateChecker/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "Update Checker"
+msgstr "בודק העדכונים"
+
+#: Views/SimpleView/plugin.json
+#, fuzzy
+msgctxt "description"
+msgid "Provides a simple solid mesh view."
+msgstr "מספק תצוגת רשת שינוי מלאה פשוטה."
+
+#: Views/SimpleView/plugin.json
+#, fuzzy
+msgctxt "name"
+msgid "Simple View"
+msgstr "תצוגה פשוטה"
