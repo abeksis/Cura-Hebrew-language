@@ -3636,7 +3636,7 @@
         },
         "travel":
         {
-            "label": "Travel (מוביל)",
+            "label": "Travel (תנועה)",
             "icon": "category_travel",
             "description": "travel",
             "type": "category",
@@ -3691,8 +3691,8 @@
                     {
                         "retraction_retract_speed":
                         {
-                            "label": "Retraction Retract Speed",
-                            "description": "The speed at which the filament is retracted during a retraction move.",
+                            "label": "Retraction Retract Speed (מהירות נסיגה נסיגה)",
+                            "description": "המהירות בה הנסיגה נסוגה במהלך מהלך נסיגה.",
                             "unit": "mm/s",
                             "type": "float",
                             "default_value": 25,
