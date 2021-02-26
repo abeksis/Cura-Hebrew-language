@@ -537,7 +537,7 @@
                 },
                 "machine_max_feedrate_z":
                 {
-                    "label": "Maximum Speed Z",
+                    "label": "Maximum Speed Z ",
                     "description": "The maximum speed for the motor of the Z-direction.",
                     "unit": "mm/s",
                     "type": "float",
@@ -548,7 +548,7 @@
                 },
                 "machine_max_feedrate_e":
                 {
-                    "label": "Maximum Feedrate",
+                    "label": "Maximum Feedrate (קצב הזנה מרבי)",
                     "description": "The maximum speed of the filament.",
                     "unit": "mm/s",
                     "type": "float",
@@ -1236,7 +1236,7 @@
                 },
                 "skin_angles":
                 {
-                    "label": "Top/Bottom Line Directions",
+                    "label": "Top/Bottom Line Directions (כיווני שורה עליונה/תחתונה)",
                     "description": "A list of integer line directions to use when the top/bottom layers use the lines or zig zag pattern. Elements from the list are used sequentially as the layers progress and when the end of the list is reached, it starts at the beginning again. The list items are separated by commas and the whole list is contained in square brackets. Default is an empty list which means use the traditional default angles (45 and 135 degrees).",
                     "type": "[int]",
                     "default_value": "[ ]",
@@ -1258,9 +1258,9 @@
                     "settable_per_mesh": true
                 },
                 "optimize_wall_printing_order":
-                {
-                    "label": "Optimize Wall Printing Order",
-                    "description": "Optimize the order in which walls are printed so as to reduce the number of retractions and the distance travelled. Most parts will benefit from this being enabled but some may actually take longer so please compare the print time estimates with and without optimization. First layer is not optimized when choosing brim as build plate adhesion type.",
+                {   
+                    "label": "Optimize Wall Printing Order (בצע אופטימיזציה להדפסת קיר)",
+                    "description": "בצע אופטימיזציה לסדר הדפסת הקירות כדי להפחית את מספר הנסיגות ואת מרחק הנסיעה. מרבית החלקים ייהנו מכך שהאפשרות הזו מופעלת, אך חלקם עשויים להימשך זמן רב יותר, לכן השווה את הערכות זמן ההדפסה עם ובלי אופטימיזציה. השכבה הראשונה אינה מותאמת בבחירת שוליים כסוג הידבקות של צלחת בנייה.",
                     "type": "bool",
                     "default_value": false,
                     "settable_per_mesh": true
@@ -1276,7 +1276,7 @@
                 },
                 "alternate_extra_perimeter":
                 {
-                    "label": "Alternate Extra Wall",
+                    "label": "Alternate Extra Wall (קיר נוסף חלופי)",
                     "description": "Prints an extra wall at every other layer. This way infill gets caught between these extra walls, resulting in stronger prints.",
                     "type": "bool",
                     "default_value": false,
@@ -1285,7 +1285,7 @@
                 },
                 "travel_compensate_overlapping_walls_enabled":
                 {
-                    "label": "Compensate Wall Overlaps",
+                    "label": "Compensate Wall Overlaps (פיצוי לקיר חופף)",
                     "description": "Compensate the flow for parts of a wall being printed where there is already a wall in place.",
                     "type": "bool",
                     "default_value": true,
@@ -1811,8 +1811,8 @@
                 },
                 "infill_multiplier":
                 {
-                    "label": "Infill Line Multiplier",
-                    "description": "Convert each infill line to this many lines. The extra lines do not cross over each other, but avoid each other. This makes the infill stiffer, but increases print time and material usage.",
+                    "label": "Infill Line Multiplier (מכפיל שורות מילוי)",
+                    "description": "‫המר כל שורת מילוי לשורה כל כך הרבה שורות. הקווים הנוספים אינם חוצים זה את זה, אלא נמנעים זה מזה. פעולה זו הופכת את מילוי נוקשה יותר, אך מגדילה את זמן ההדפסה ואת השימוש בחומרים",
                     "default_value": 1,
                     "type": "int",
                     "minimum_value": "1",
@@ -2260,7 +2260,7 @@
                 },
                 "material_bed_temperature":
                 {
-                    "label": "Build Plate Temperature",
+                    "label": "Build Plate Temperature ( טמפ הדפסה קבועה",
                     "description": "The temperature used for the heated build plate. If this is 0, the build plate is left unheated.",
                     "unit": "°C",
                     "type": "float",
@@ -2278,7 +2278,7 @@
                 },
                 "material_bed_temperature_layer_0":
                 {
-                    "label": "Build Plate Temperature Initial Layer",
+                    "label": "Build Plate Temperature Initial Layer ( טמפ שכבה ראשונה",
                     "description": "The temperature used for the heated build plate at the first layer. If this is 0, the build plate is left unheated during the first layer.",
                     "unit": "°C",
                     "type": "float",
@@ -3691,7 +3691,7 @@
                     {
                         "retraction_retract_speed":
                         {
-                            "label": "Retraction Retract Speed (מהירות נסיגה נסיגה)",
+                            "label": "Retraction Retract Speed (מהירות נסיגת נסיגה)",
                             "description": "המהירות בה הנסיגה נסוגה במהלך מהלך נסיגה.",
                             "unit": "mm/s",
                             "type": "float",
@@ -5175,8 +5175,8 @@
                 },
                 "adhesion_type":
                 {
-                    "label": "Build Plate Adhesion Type (נהל את סוג הידבקות)",
-                    "description": "Different options that help to improve both priming your extrusion and adhesion to the build plate. Brim adds a single layer flat area around the base of your model to prevent warping. Raft adds a thick grid with a roof below the model. Skirt is a line printed around the model, but not connected to the model.",
+                    "label": "Build Plate Adhesion Type (לנהל את סוג הידבקות)",
+                    "description": "‫אפשרויות שונות המסייעות לשפר הן את ההבלטה שלך והן את ההידבקות בצלחת הבנייה. Brim מוסיפה שכבה אחת שטוחה מסביב לבסיס הדגם כדי למנוע עקמום. רפסודה מוסיפה רשת עבה עם גג מתחת לדגם. חצאית היא קו מודפס סביב המודל, אבל לא מחובר למודל",
                     "type": "enum",
                     "options":
                     {
@@ -5313,7 +5313,7 @@
                 },
                 "raft_margin":
                 {
-                    "label": "Raft Extra Margin",
+                    "label": "Raft Extra Margin (גודל שוליי הרפסודה)   ",
                     "description": "If the raft is enabled, this is the extra raft area around the model which is also given a raft. Increasing this margin will create a stronger raft while using more material and leaving less area for your print.",
                     "unit": "mm",
                     "type": "float",
@@ -5327,8 +5327,8 @@
                 },
                 "raft_smoothing":
                 {
-                    "label": "Raft Smoothing",
-                    "description": "This setting controls how much inner corners in the raft outline are rounded. Inward corners are rounded to a semi circle with a radius equal to the value given here. This setting also removes holes in the raft outline which are smaller than such a circle.",
+                    "label": "Raft Smoothing (החלקת הרפסודה)",
+                    "description": "הגדרה זו קובעת כמה פינות פנימיות במתווה הרפסודה מעוגלות. פינות פנימיות מעוגלות לחצי עיגול ברדיוס השווה לערך שניתן כאן. הגדרה זו מסירה גם חורים במתווה הרפסודה הקטנים יותר ממעגל כזה.",
                     "unit": "mm",
                     "type": "float",
                     "default_value": 5,
@@ -5784,7 +5784,7 @@
         },
         "dual":
         {
-            "label": "Dual Extrusion",
+            "label": "Dual Extrusion (השחלה כפולה)",
             "type": "category",
             "icon": "category_dual",
             "description": "הגדרות המשמשות להדפסה עם מספר אקסטרודר",
