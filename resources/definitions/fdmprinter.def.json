@@ -1198,9 +1198,9 @@
                     "type": "enum",
                     "options":
                     {
-                        "lines": "Lines",
-                        "concentric": "Concentric",
-                        "zigzag": "Zig Zag"
+                        "lines": "Lines (שורות)",
+                        "concentric": "Concentric (קונצנטרי)",
+                        "zigzag": "Zig Zag (זיג זג)"
                     },
                     "default_value": "lines",
                     "enabled": "top_layers > 0 or bottom_layers > 0",
@@ -1214,9 +1214,9 @@
                     "type": "enum",
                     "options":
                     {
-                        "lines": "Lines",
-                        "concentric": "Concentric",
-                        "zigzag": "Zig Zag"
+                        "lines": "Lines (שורות)",
+                        "concentric": "Concentric (קונצנטרי)",
+                        "zigzag": "Zig Zag (זיג זג)"
                     },
                     "default_value": "lines",
                     "enabled": "top_layers > 0 or bottom_layers > 0",
@@ -1351,16 +1351,16 @@
                 },
                 "filter_out_tiny_gaps":
                 {
-                    "label": "Filter Out Tiny Gaps",
-                    "description": "Filter out tiny gaps to reduce blobs on outside of model.",
+                    "label": "Filter Out Tiny Gaps (סנן רווחים קטנים)",
+                    "description": "סנן רווחים קטנים על מנת להפחית כתמים מחוץ למודל.",   
                     "type": "bool",
                     "default_value": true,
                     "limit_to_extruder": "wall_0_extruder_nr",
                     "settable_per_mesh": true
                 },
                 "fill_outline_gaps": {
-                    "label": "Print Thin Walls",
-                    "description": "Print pieces of the model which are horizontally thinner than the nozzle size.",
+                    "label": "Print Thin Walls (לאפשר להדפיס קירות דקים)",
+                    "description": "הדפיסו חלקים מהדגם הדקים אופקית מגודל הזרבובית.",
                     "type": "bool",
                     "default_value": false,
                     "limit_to_extruder": "wall_0_extruder_nr",
@@ -1368,7 +1368,7 @@
                 },
                 "xy_offset":
                 {
-                    "label": "Horizontal Expansion",
+                    "label": "Horizontal Expansion (הרחבה אופקית)",
                     "description": "Amount of offset applied to all polygons in each layer. Positive values can compensate for too big holes; negative values can compensate for too small holes.",
                     "unit": "mm",
                     "type": "float",
@@ -1545,8 +1545,8 @@
                     "type": "enum",
                     "options":
                     {
-                        "concentric": "Concentric",
-                        "zigzag": "Zig Zag"
+                        "concentric": "Concentric (קונצנטרי)",
+                        "zigzag": "Zig Zag (זיג זג)"
                     },
                     "default_value": "zigzag",
                     "enabled": "ironing_enabled",
@@ -1724,18 +1724,18 @@
                     "type": "enum",
                     "options":
                     {
-                        "grid": "Grid",
-                        "lines": "Lines",
-                        "triangles": "Triangles",
-                        "trihexagon": "Tri-Hexagon",
-                        "cubic": "Cubic",
+                        "grid": "Grid (רשת)",
+                        "lines": "Lines (שורות)",
+                        "triangles": "Triangles (משולשים)",
+                        "trihexagon": "Tri-Hexagon (תלת משושה)",
+                        "cubic": "Cubic (קוביה)",
                         "cubicsubdiv": "Cubic Subdivision",
-                        "tetrahedral": "Octet",
-                        "quarter_cubic": "Quarter Cubic",
-                        "concentric": "Concentric",
-                        "zigzag": "Zig Zag",
-                        "cross": "Cross",
-                        "cross_3d": "Cross 3D",
+                        "tetrahedral": "Octet (שמיניה)",
+                        "quarter_cubic": "Quarter Cubic (רבע קוביה)",
+                        "concentric": "Concentric (קונצנטרי)",
+                        "zigzag": "Zig Zag (זיג-זג)",
+                        "cross": "Cross (חציה)",
+                        "cross_3d": "Cross 3D (חוצה תלת מימד)",
                         "gyroid": "Gyroid"
                     },
                     "default_value": "grid",
@@ -4027,6 +4027,7 @@
                 },
                 "cool_fan_full_at_height":
                 {
+                    
                     "label": "Regular Fan Speed at Height (מהירות מאוורר קבועה בגובה)",
                     "description": "The height at which the fans spin on regular fan speed. At the layers below the fan speed gradually increases from Initial Fan Speed to Regular Fan Speed.",
                     "unit": "mm",
@@ -4041,7 +4042,7 @@
                     {
                         "cool_fan_full_layer":
                         {
-                            "label": "Regular Fan Speed at Layer (מהירות מניפה רגילה בשכבה)",
+                            "label": "Regular Fan Speed at Layer (מהירות רגילה מאוורר ביצירת שכבה)",
                             "description": "The layer at which the fans spin on regular fan speed. If regular fan speed at height is set, this value is calculated and rounded to a whole number.",
                             "type": "int",
                             "default_value": 2,
@@ -4079,8 +4080,8 @@
                 },
                 "cool_lift_head":
                 {
-                    "label": "Lift Head (הרם ראש)",
-                    "description": "When the minimum speed is hit because of minimum layer time, lift the head away from the print and wait the extra time until the minimum layer time is reached.",
+                    "label": "Lift Head (הרם ראש הדפסה)",
+                    "description": "כאשר המהירות המינימלית נפגעת בגלל זמן השכבה המינימלי, הרם את הראש מההדפסה והמתן את הזמן הנוסף עד שיגיע זמן השכבה המינימלי.",
                     "type": "bool",
                     "default_value": false,
                     "settable_per_mesh": false,
@@ -4098,8 +4099,8 @@
             {
                 "support_enable":
                 {
-                    "label": "Generate Support (צור תמיכה)",
-                    "description": "צור מבנים לתמיכה בחלקים של המודל שיש להם תלויות. ללא מבנים אלה, חלקים כאלה יתמוטטו במהלך ההדפסה.",
+                    "label": "Generate Support (יצירת תמיכה)",
+                    "description": "יצירת תמיכה לחלקים במודל, הזקוקים לתלויות. ללא התמיכה, האובייקט יתמוטט במהלך ההדפסה.",
                     "type": "bool",
                     "default_value": false,
                     "settable_per_mesh": true,
@@ -4183,8 +4184,8 @@
                     "type": "enum",
                     "options":
                     {
-                        "normal": "Normal",
-                        "tree": "Tree"
+                        "normal": "Normal (נורמל)",
+                        "tree": "Tree (עץ)"
                     },
                     "enabled": "support_enable",
                     "default_value": "normal",
@@ -4271,7 +4272,7 @@
                     "options":
                     {
                         "buildplate": "Touching Buildplate",
-                        "everywhere": "Everywhere"
+                        "everywhere": "בכל מקום"
                     },
                     "default_value": "everywhere",
                     "resolve": "'everywhere' if 'everywhere' in extruderValues('support_type') else 'buildplate'",
@@ -4300,12 +4301,12 @@
                     "type": "enum",
                     "options":
                     {
-                        "lines": "Lines",
-                        "grid": "Grid",
-                        "triangles": "Triangles",
-                        "concentric": "Concentric",
-                        "zigzag": "Zig Zag",
-                        "cross": "Cross",
+                        "lines": "Lines (שורות)",
+                        "grid": "Grid (רשת)",
+                        "triangles": "Triangles (משולשים)",
+                        "concentric": "Concentric (קונצנטרי)",
+                        "zigzag": "Zig Zag (זי זג)",
+                        "cross": "Cross (חציה)",
                         "gyroid": "Gyroid"
                     },
                     "default_value": "zigzag",
@@ -4500,7 +4501,7 @@
                 },
                 "support_xy_distance":
                 {
-                    "label": "Support X/Y Distance",
+                    "label": "Support X/Y Distance ( מרחק התמיכה בין X/Y )",
                     "description": "Distance of the support structure from the print in the X/Y directions.",
                     "unit": "mm",
                     "type": "float",
@@ -4528,7 +4529,7 @@
                 },
                 "support_xy_distance_overhang":
                 {
-                    "label": "Minimum Support X/Y Distance",
+                    "label": "Minimum Support X/Y Distance (מרחק תמיכה מינימלי בין X / Y)",
                     "description": "Distance of the support structure from the overhang in the X/Y directions.",
                     "unit": "mm",
                     "type": "float",
@@ -4849,11 +4850,11 @@
                     "type": "enum",
                     "options":
                     {
-                        "lines": "Lines",
-                        "grid": "Grid",
-                        "triangles": "Triangles",
-                        "concentric": "Concentric",
-                        "zigzag": "Zig Zag"
+                        "lines": "Lines (שורות)",
+                        "grid": "Grid (רשת)",
+                        "triangles": "Triangles (משולשים)",
+                        "concentric": "Concentric (קונצנטרי)",
+                        "zigzag": "Zig Zag (זיגזג)"
                     },
                     "default_value": "concentric",
                     "limit_to_extruder": "support_interface_extruder_nr",
@@ -4869,11 +4870,11 @@
                             "type": "enum",
                             "options":
                             {
-                                "lines": "Lines",
-                                "grid": "Grid",
-                                "triangles": "Triangles",
-                                "concentric": "Concentric",
-                                "zigzag": "Zig Zag"
+                                "lines": "Lines (שורות)",
+                                "grid": "Grid (רשת)",
+                                "triangles": "Triangles (משולשים)",
+                                "concentric": "Concentric (קונצנטרי)",
+                                "zigzag": "Zig Zag (זיגזג)"
                             },
                             "default_value": "concentric",
                             "value": "extruderValue(support_roof_extruder_nr, 'support_interface_pattern')",
@@ -4889,11 +4890,11 @@
                             "type": "enum",
                             "options":
                             {
-                                "lines": "Lines",
-                                "grid": "Grid",
-                                "triangles": "Triangles",
-                                "concentric": "Concentric",
-                                "zigzag": "Zig Zag"
+                                "lines": "Lines (שורות)",
+                                "grid": "Grid (רשת)",
+                                "triangles": "Triangles (משולשים)",
+                                "concentric": "Concentric (קונצנטרי)",
+                                "zigzag": "Zig Zag (זיגזג)"
                             },
                             "default_value": "concentric",
                             "value": "extruderValue(support_bottom_extruder_nr, 'support_interface_pattern')",
@@ -5180,10 +5181,10 @@
                     "type": "enum",
                     "options":
                     {
-                        "skirt": "Skirt",
-                        "brim": "Brim",
-                        "raft": "Raft",
-                        "none": "None"
+                        "skirt": "Skirt (חצאית)",
+                        "brim": "Brim (שוליים)",
+                        "raft": "Raft (רפסודה)",
+                        "none": "None (ללא)"
                     },
                     "default_value": "brim",
                     "resolve": "extruderValue(adhesion_extruder_nr, 'adhesion_type')",
@@ -5203,7 +5204,7 @@
                 },
                 "skirt_line_count":
                 {
-                    "label": "Skirt Line Count",
+                    "label": "Skirt Line Count (כמות הקווים בחצאית החיצונית)",
                     "description": "Multiple skirt lines help to prime your extrusion better for small models. Setting this to 0 will disable the skirt.",
                     "type": "int",
                     "default_value": 1,
@@ -5216,8 +5217,8 @@
                 },
                 "skirt_gap":
                 {
-                    "label": "Skirt Distance",
-                    "description": "The horizontal distance between the skirt and the first layer of the print.\nThis is the minimum distance. Multiple skirt lines will extend outwards from this distance.",
+                    "label": "Skirt Distance (מרחק חצאית)",
+                    "description": "המרחק האופקי בין החצאית לשכבת ההדפס הראשונה. זהו המרחק המינימלי. קווי חצאית מרובים יתפרשו כלפי חוץ ממרחק זה.",
                     "unit": "mm",
                     "type": "float",
                     "default_value": 3,
@@ -5230,7 +5231,7 @@
                 },
                 "skirt_brim_minimal_length":
                 {
-                    "label": "Skirt/Brim Minimum Length",
+                    "label": "Skirt/Brim Minimum Length (חצאית / שוליים אורך מינימלי)",
                     "description": "The minimum length of the skirt or brim. If this length is not reached by all skirt or brim lines together, more skirt or brim lines will be added until the minimum length is reached. Note: If the line count is set to 0 this is ignored.",
                     "unit": "mm",
                     "type": "float",
@@ -5244,8 +5245,8 @@
                 },
                 "brim_width":
                 {
-                    "label": "Brim Width",
-                    "description": "The distance from the model to the outermost brim line. A larger brim enhances adhesion to the build plate, but also reduces the effective print area.",
+                    "label": "Brim Width (רוחב שוליים)",
+                    "description": "המרחק מהדגם לקו הגבול החיצוני ביותר. שוליים גדולים יותר משפרים את ההידבקות לפלטת הבנייה, אך גם מקטינים את שטח ההדפסה היעיל.",
                     "type": "float",
                     "unit": "mm",
                     "default_value": 8.0,
@@ -5784,7 +5785,7 @@
         },
         "dual":
         {
-            "label": "Dual Extrusion (השחלה כפולה)",
+            "label": "Dual Extrusion (ראש כפול)",
             "type": "category",
             "icon": "category_dual",
             "description": "הגדרות המשמשות להדפסה עם מספר אקסטרודר",
@@ -5999,10 +6000,10 @@
         },
         "meshfix":
         {
-            "label": "Mesh Fixes (תיקוני רשת)",
+            "label": "Mesh Fixes (תיקוני שכבות)",
             "type": "category",
             "icon": "category_fixes",
-            "description": "הפוך את הרשתות למתאימות יותר להדפסת תלת מימד.",
+            "description": "להפוך את שכבות ההדפסה תואמות למודול.",
             "children":
             {
                 "meshfix_union_all":
@@ -6125,7 +6126,7 @@
         },
         "blackmagic":
         {
-            "label": "Special Modes (מצבים מיוחדים) ",
+            "label": "Special Modes (שינויים מיוחדים) ",
             "type": "category",
             "icon": "category_blackmagic",
             "description": "דרכים לא מסורתיות להדפיס את הדגמים שלך.",
@@ -6138,8 +6139,8 @@
                     "type": "enum",
                     "options":
                     {
-                        "all_at_once": "All at Once",
-                        "one_at_a_time": "One at a Time"
+                        "all_at_once": "הכל בבת אחת",
+                        "one_at_a_time": "אחד בכל פעם"
                     },
                     "default_value": "all_at_once",
                     "enabled": "extruders_enabled_count == 1",
@@ -6258,9 +6259,9 @@
                     "type": "enum",
                     "options":
                     {
-                        "normal": "Normal",
-                        "surface": "Surface",
-                        "both": "Both"
+                        "normal": "נורמלי",
+                        "surface": "משטח",
+                        "both": "ביחד"
                     },
                     "default_value": "normal",
                     "settable_per_mesh": true
@@ -6311,9 +6312,9 @@
                     "type": "enum",
                     "options":
                     {
-                        "middle": "Middle",
-                        "exclusive": "Exclusive",
-                        "inclusive": "Inclusive"
+                        "middle": "Middle (אמצע)",
+                        "exclusive": "Exclusive (בלעדי)",
+                        "inclusive": "Inclusive (כלול)"
                     },
                     "default_value": "middle",
                     "settable_per_mesh": true
@@ -6340,9 +6341,9 @@
                     "type": "enum",
                     "options":
                     {
-                        "lines": "Lines",
-                        "concentric": "Concentric",
-                        "zigzag": "Zig Zag"
+                        "lines": "Lines (שורות)",
+                        "concentric": "Concentric (קונצנטרי)",
+                        "zigzag": "Zig Zag (זיג זג)"
                     },
                     "default_value": "lines",
                     "value": "top_bottom_pattern",
@@ -6476,8 +6477,8 @@
                     "type": "enum",
                     "options":
                     {
-                        "full": "Full",
-                        "limited": "Limited"
+                        "full": "מלא",
+                        "limited": "מוגבל"
                     },
                     "default_value": "full",
                     "resolve": "'full' if 'full' in extruderValues('draft_shield_height_limitation') else 'limited'",
@@ -7006,9 +7007,9 @@
                     "type": "enum",
                     "options":
                     {
-                        "compensate": "Compensate",
-                        "knot": "Knot",
-                        "retract": "Retract"
+                        "compensate": "לפצות",
+                        "knot": "Knot (קשר)",
+                        "retract": "Retract (לסגת)"
                     },
                     "default_value": "compensate",
                     "enabled": "wireframe_enabled",
